@@ -1,28 +1,57 @@
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url(assets/fonts/HankenGrotesk-Medium.woff) format("woff"),
+    url(assets/fonts/HankenGrotesk-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
-/* ## Colors
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url(assets/fonts/HankenGrotesk-Bold.woff) format("woff"),
+    url(assets/fonts/HankenGrotesk-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
-### Primary
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url(assets/fonts/HankenGrotesk-ExtraBold.woff) format("woff"),
+    url(assets/fonts/HankenGrotesk-ExtraBold.woff2) format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
 
-- Light red: hsl(0, 100%, 67%) #ff5757
-- Orangey yellow: hsl(39, 100%, 56%) #ffb01f
-- Green teal: hsl(166, 100%, 37%) #00bd91
-- Cobalt blue: hsl(234, 85%, 45%) #1125d4
+:root {
+  /*Primary */
+  --light-red: #ff5757;
+  --light-red-transparency: rgba(255, 87, 87, 0.1);
+  --orangey-yellow: #ffb01f;
+  --orangey-yellow-transparency: rgba(255, 177, 31, 0.1);
+  --green-teal: #00bd91;
+  --green-teal-transparency: rgba(0, 189, 145, 0.1);
+  --cobalt-blue: #1125d4;
+  --cobalt-blue-transparency: rgba(17, 36, 212, 0.1);
 
-## Gradients
+  /*Gradients background */
+  --light-slate-blue: #7857ff;
+  --light-royal-blue: #2e2be9;
 
-- Light slate blue (background): hsl(252, 100%, 67%) #7857ff
-- Light royal blue (background): hsl(241, 81%, 54%) #2e2be9
+  /*Gradients circle */
+  --violet-blue: rgb(78, 33, 202, 1);
+  --persian-blue: rgba(36, 33, 202, 0);
 
-- Violet blue (circle): hsla(256, 72%, 46%, 1) rgb(78, 33, 202, 1)
-- Persian blue (circle): hsla(241, 72%, 46%, 0) rgba(36, 33, 202, 0)
-
-### Neutral
-
-- White: hsl(0, 0%, 100%) #fff
-- Pale blue: hsl(221, 100%, 96%)
-- Light lavender: hsl(241, 100%, 89%) #c8c7ff
-- Dark gray blue: hsl(224, 30%, 27%)  #303b5a*/
+  /*Neutral */
+  --white: #fff;
+  --pale-blue: #ebf1ff;
+  --light-lavender: #c8c7ff;
+  --dark-gray-blue: #303b5a;
+  --dark-gray-blue-transparency: rgba(48, 59, 90, 0.5);
+  --mariner: #3e52a3;
+}
 
 * {
   margin: 0;
@@ -36,7 +65,6 @@ html {
 }
 
 body {
-  background-color: blanchedalmond;
   min-height: 100vh;
 
   display: flex;
@@ -47,71 +75,85 @@ body {
 
 .component {
   background-color: #fff;
-  max-width: 50rem;
+  max-width: 65rem;
   border-radius: 2rem;
   margin-bottom: 2rem;
+  box-shadow: 13px 15px 22px 3px rgba(48, 59, 90, 0.1);
 
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+/**************************/
+/* YOUR RESULT*/
+/**************************/
+
 .result {
-  background: linear-gradient(#7857ff, #2e2be9);
-  color: #c8c7ff;
+  background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+  color: var(--light-lavender);
   border-radius: 2rem;
   text-align: center;
 }
 
 .result h2 {
-  font-size: 1.6rem;
+  font-size: 2.6rem;
   font-weight: 700;
-  margin: 2rem;
-}
-
-.result h3 {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-}
-
-.paragraph {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin: 0 4rem 4rem 4rem;
+  margin: 3rem;
 }
 
 .score {
   display: inline-block;
   background: linear-gradient(rgb(78, 33, 202, 1), rgba(36, 33, 202, 0));
-  padding: 2.5rem 4rem;
+  padding: 4rem 6rem;
   border-radius: 50%;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .total {
   color: #fff;
+  font-size: 7.2rem;
   font-weight: 800;
-  font-size: 5rem;
 }
 
+.score p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.result h3 {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0 4rem 4rem 4rem;
+}
+
+/**************************/
+/* SUMMARY */
+/**************************/
+
 .summary {
-  margin: 2rem;
+  margin: 3rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .summary h2 {
-  color: #303b5a;
-  font-size: 1.6rem;
+  color: var(--dark-gray-blue);
+  font-size: 2.6rem;
   font-weight: 700;
 }
 
 .categories {
   font-size: 1.6rem;
   font-weight: 500;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 1rem;
 
   display: flex;
@@ -120,7 +162,7 @@ body {
 }
 
 .categories span {
-  color: #303b5a;
+  color: var(--dark-gray-blue);
   font-weight: 800;
 }
 
@@ -135,33 +177,45 @@ body {
 }
 
 .reaction {
-  color: #ff5757;
-  background-color: rgba(255, 87, 87, 0.1);
+  color: var(--light-red);
+  background-color: var(--light-red-transparency);
 }
 
 .memory {
-  color: #ffb01f;
-  background-color: rgb(255, 176, 31, 0.1);
+  color: var(--orangey-yellow);
+  background-color: var(--orangey-yellow-transparency);
 }
 
 .verbal {
-  color: #00bd91;
-  background-color: rgb(0, 189, 145, 0.1);
+  color: var(--green-teal);
+  background-color: var(--green-teal-transparency);
 }
 
 .visual {
-  color: #1125d4;
-  background-color: rgb(17, 37, 212, 0.1);
+  color: var(--cobalt-blue);
+  background-color: var(--cobalt-blue-transparency);
+  margin-bottom: 2rem;
 }
 
-.summary a {
-  background-color: #303b5a;
-  color: hsl(221, 100%, 96%);
-  font-size: 1.6rem;
+.btn:link,
+.btn:visited {
+  background-color: var(--dark-gray-blue);
+  color: var(--pale-blue);
+  font-size: 1.8rem;
   text-align: center;
-  padding: 1rem 0;
-  border-radius: 2rem;
+  border-radius: 3rem;
+  padding: 1.5rem 0;
+  text-decoration: none;
 }
+
+.btn:hover,
+.btn:active {
+  background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
 
 .attribution {
   font-size: 1.1rem;
@@ -169,4 +223,19 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/**************************/
+/* BELOW 645px */
+/**************************/
+
+@media (max-width: 40.3em) {
+  .component {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .result {
+    border-radius: 0rem 0rem 4rem 4rem;
+  }
 }
