@@ -1,10 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+@font-face {
+  font-family: "Outfit";
+  src: url(assets/fonts/Outfit-Regular.woff) format("woff"),
+    url(assets/fonts/Outfit-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
-/* - White: hsl(0, 0%, 100%)  #fff
-- Light gray: hsl(212, 45%, 89%)  #d6e2f0
-- Grayish blue: hsl(220, 15%, 55%) #7b879d
-- Dark blue: hsl(218, 44%, 22%)  #1f3251
-- hsl(228, 45%, 44%) #3e52a3 */
+@font-face {
+  font-family: "Outfit";
+  src: url(assets/fonts/Outfit-Bold.woff) format("woff"),
+    url(assets/fonts/Outfit-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --white: #fff;
+  --light-gray: #d6e2f0;
+  --grayish-blue: #7b879d;
+  --dark-blue: #1f3251;
+  --mariner: #3e52a3;
+}
 
 * {
   margin: 0;
@@ -18,7 +36,7 @@ html {
 }
 
 body {
-  background-color: #d6e2f0;
+  background-color: var(--light-gray);
   min-height: 100vh;
 
   display: flex;
@@ -34,7 +52,7 @@ img {
 }
 
 .component {
-  background-color: #fff;
+  background-color: var(--white);
   font-size: 1.5rem;
   max-width: 30rem;
   margin: 2rem;
@@ -46,14 +64,14 @@ img {
 .component h2 {
   text-align: center;
   font-weight: 700;
-  color: #1f3251;
+  color: var(--dark-blue);
   margin-bottom: 1rem;
 }
 
 .component p {
   text-align: center;
   font-weight: 400;
-  color: #7b879d;
+  color: var(--grayish-blue);
   padding: 1rem;
   margin-bottom: 1rem;
 }
@@ -64,5 +82,5 @@ img {
   margin-bottom: 2rem;
 }
 .attribution a {
-  color: #3e52a3;
+  color: var(--mariner);
 }
