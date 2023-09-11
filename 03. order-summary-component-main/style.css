@@ -77,6 +77,7 @@ body {
 }
 
 .hero {
+  max-width: 100%;
   border-radius: 2rem 2rem 0rem 0rem;
   margin-bottom: 4rem;
 }
@@ -185,11 +186,26 @@ body {
 .attribution {
   font-size: 1.1rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 .attribution a {
   color: var(--mariner);
 }
 
 /**************************/
-/* BELOW 645px */
+/* BELOW 500px */
 /**************************/
+
+@media (max-width: 31.2em) {
+  body {
+    background-image: url(assets/images/pattern-background-mobile.svg);
+  }
+
+  .component {
+    margin: 9rem 4rem 2rem 4rem;
+  }
+
+  .attribution {
+    margin-bottom: 2rem;
+  }
+}
