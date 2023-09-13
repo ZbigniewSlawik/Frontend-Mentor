@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Medium.woff") format("woff"),
+    url("../assets/fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Bold.woff") format("woff"),
+    url("../assets/fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("../assets/fonts/Fraunces_9pt-Bold.woff") format("woff"),
+    url("../assets/fonts/Fraunces_9pt-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ### Primary */
+  --dark-cyan: #3c8067;
+  --cream: #f2ebe3;
+
+  /* ### Neutral */
+  --very-dark-blue: #1c232b;
+  --dark-grayish-blue: #6c7289;
+  --white: #ffffff;
+  --mariner: #3e52a3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  max-height: 100vh;
+  background-color: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.component {
+  background-color: var(--white);
+  max-width: 31.25rem;
+}
+
+.bottle {
+  height: 250px;
+}
+
+/**************************/
+/* ORDER SUMMARY CARD*/
+/**************************/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--mariner);
+}
