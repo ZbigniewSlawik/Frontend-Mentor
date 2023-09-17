@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Product preview card component from frontent mentor site made by Zbigniew Slawik"
-    />
-    <meta name="author" content="Zbigniew Sławik" />
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+         name="description"
+         content="Product preview card component from frontent mentor site made by Zbigniew Slawik"
+      />
+      <meta name="author" content="Zbigniew Sławik" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/favicon-32x32.png"
-    />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="assets/images/favicon-32x32.png"
+      />
 
-    <title>Frontend Mentor | Product preview card component</title>
+      <title>Frontend Mentor | Product preview card component</title>
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
-  </head>
-  <body>
-    <main>
-      <article class="component">
-        <img
-          class="bottle"
-          src="assets/images/image-product-desktop.jpg"
-          alt="Bottle of perfume the Hous of CHANEL"
-        />
-        <div class="perfume">
-          <h1>Perfume</h1>
-          <h2>Gabrielle Essence Eau De Parfum</h2>
-          <p>
-            A floral, solar and voluptuous interpretation composed by Olivier
-            Polge, Perfumer-Creator for the House of CHANEL.
-          </p>
-          <div class="price">
-            <div class="new">
-              <strong>$149.99</strong>
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/queries.css" />
+   </head>
+   <body>
+      <main>
+         <article class="product">
+            <img
+               class="product__img"
+               src="assets/images/image-product-desktop.jpg"
+               alt="Bottle of perfume the house from CHANEL"
+            />
+            <img
+               class="product__img--mobile"
+               src="assets/images/image-product-mobile.jpg"
+               alt="Bottle of perfume the house from CHANEL"
+            />
+            <div class="product__description">
+               <h1 class="product__heading1">Perfume</h1>
+               <h2 class="product__heading2">
+                  Gabrielle Essence Eau De Parfum
+               </h2>
+               <p class="product__paragraph">
+                  A floral, solar and voluptuous interpretation composed by
+                  Olivier Polge, Perfumer-Creator for the House of CHANEL.
+               </p>
+               <div class="product__price">
+                  <strong class="product__new-price">$149.99</strong>
+                  <p class="product__standard-price">$169.99</p>
+               </div>
+
+               <a class="button" href="#">
+                  <img src="assets/images/icon-cart.svg" alt="" />
+                  <p>Add to Cart</p>
+               </a>
             </div>
-            <div class="old">$169.99</div>
-          </div>
-          <a class="btn" href="#">
-            <img src="assets/images/icon-cart.svg" alt="#" />
-            <p>Add to Cart</p></a
-          >
-        </div>
-      </article>
-    </main>
+         </article>
+      </main>
 
-    <footer class="attribution">
-      <div>
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a href="https://github.com/ZbigniewSlawik" target="_blank"
-          >Zbigniew Sławik</a
-        >.
-      </div>
-    </footer>
-  </body>
+	  <footer class="attribution">
+		<div>
+		  Challenge by
+		  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+			>Frontend Mentor</a
+		  >. Coded by
+		  <a href="https://github.com/ZbigniewSlawik" target="_blank"
+			>Zbigniew Sławik</a
+		  >.
+		</div>
+   </body>
 </html>

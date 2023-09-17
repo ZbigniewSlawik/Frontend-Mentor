@@ -1,0 +1,42 @@
+/**************************/
+/* BELOW 624px */
+/**************************/
+
+@media (max-width: 39em) {
+   .product {
+      flex-direction: column;
+      margin: 0 1.1rem;
+   }
+
+   .product__img {
+      display: none;
+   }
+   .product__img--mobile {
+      display: inline-block;
+      max-width: 100%;
+      border-radius: 0.6rem 0.6rem 0 0;
+   }
+
+   .product__description {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .product__heading1 {
+      padding-bottom: 0.7rem;
+   }
+
+   .product__heading2 {
+      font-size: 2rem;
+      padding-bottom: 0.7rem;
+   }
+
+   .product__paragraph {
+      padding-right: 0;
+   }
+
+   .button {
+      justify-content: center;
+   }
+}

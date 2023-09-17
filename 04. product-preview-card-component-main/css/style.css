@@ -1,72 +1,153 @@
 @font-face {
-  font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat-Medium.woff") format("woff"),
-    url("../assets/fonts/Montserrat-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+   font-family: "Montserrat";
+   src: url("../assets/fonts/Montserrat-Medium.woff") format("woff"),
+      url("../assets/fonts/Montserrat-Medium.woff2") format("woff2");
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
 }
 @font-face {
-  font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat-Bold.woff") format("woff"),
-    url("../assets/fonts/Montserrat-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+   font-family: "Montserrat";
+   src: url("../assets/fonts/Montserrat-Bold.woff") format("woff"),
+      url("../assets/fonts/Montserrat-Bold.woff2") format("woff2");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
 }
 @font-face {
-  font-family: "Fraunces";
-  src: url("../assets/fonts/Fraunces_9pt-Bold.woff") format("woff"),
-    url("../assets/fonts/Fraunces_9pt-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+   font-family: "Fraunces";
+   src: url("../assets/fonts/Fraunces_9pt-Bold.woff") format("woff"),
+      url("../assets/fonts/Fraunces_9pt-Bold.woff2") format("woff2");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
 }
 
 :root {
-  /* ### Primary */
-  --dark-cyan: #3c8067;
-  --cream: #f2ebe3;
+   /* ### Primary */
+   --dark-cyan: #3c8067;
+   --dark-cyan-hover: #214538;
+   --cream: #f2ebe3;
 
-  /* ### Neutral */
-  --very-dark-blue: #1c232b;
-  --dark-grayish-blue: #6c7289;
-  --white: #ffffff;
-  --mariner: #3e52a3;
+   /* ### Neutral */
+   --very-dark-blue: #1c232b;
+   --dark-grayish-blue: #6c7289;
+   --white: #ffffff;
+   --mariner: #3e52a3;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 body {
-  max-height: 100vh;
-  background-color: var(--cream);
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
+   min-height: 100vh;
+   background-color: var(--cream);
 
-.component {
-  background-color: var(--white);
-  max-width: 31.25rem;
-}
-
-.bottle {
-  height: 250px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 /**************************/
-/* ORDER SUMMARY CARD*/
+/* PREVIEW CARD COMPONENT */
+/**************************/
+
+.product {
+   background-color: var(--white);
+   max-width: 39rem;
+   border-radius: 0.6rem;
+   display: flex;
+   align-items: center;
+}
+
+.product__img {
+   max-width: 50%;
+   height: auto;
+   border-radius: 0.6rem 0rem 0rem 0.6rem;
+}
+
+.product__img--mobile {
+   display: none;
+}
+
+.product__description {
+   padding: 2rem;
+}
+
+.product__heading1 {
+   color: var(--dark-grayish-blue);
+   font: 500 0.875rem "Montserrat", sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 0.313rem;
+   padding-bottom: 1.6rem;
+}
+
+.product__heading2 {
+   color: var(--very-dark-blue);
+   font: 700 2.1rem "Fraunces", sans-serif;
+   line-height: 2rem;
+   padding-bottom: 1.6rem;
+}
+
+.product__paragraph {
+   color: var(--dark-grayish-blue);
+   font: 500 0.875rem "Montserrat", sans-serif;
+   line-height: 1.4rem;
+   padding-bottom: 1.6rem;
+   padding-right: 1rem;
+}
+
+.product__price {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   padding-bottom: 1.6rem;
+}
+
+.product__new-price {
+   color: var(--dark-cyan);
+   font: 700 2.1rem "Fraunces", sans-serif;
+}
+
+.product__standard-price {
+   color: var(--dark-grayish-blue);
+   font: 500 0.875rem "Montserrat", sans-serif;
+   text-decoration: line-through;
+}
+
+.button:link,
+.button:visited {
+   background-color: var(--dark-cyan);
+   color: var(--white);
+   font: 500 0.875rem "Montserrat", sans-serif;
+   padding: 0.875rem 4.375rem;
+   border-radius: 10px;
+   text-decoration: none;
+   display: inline-flex;
+   gap: 0.7rem;
+}
+
+.button:hover,
+.button:active {
+   background-color: var(--dark-cyan-hover);
+}
+
+/**************************/
+/* FOOTER */
 /**************************/
 
 .attribution {
-  font-size: 11px;
-  text-align: center;
+   font-size: 0.688rem;
+   text-align: center;
+   position: relative;
+   top: 2rem;
 }
 .attribution a {
-  color: var(--mariner);
+   color: var(--mariner);
 }
