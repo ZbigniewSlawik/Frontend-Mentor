@@ -1,86 +1,92 @@
 @font-face {
-  font-family: "Outfit";
-  src: url(assets/fonts/Outfit-Regular.woff) format("woff"),
-    url(assets/fonts/Outfit-Regular.woff2) format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+   font-family: "Outfit";
+   src: url(assets/fonts/Outfit-Regular.woff) format("woff"),
+      url(assets/fonts/Outfit-Regular.woff2) format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
 }
 
 @font-face {
-  font-family: "Outfit";
-  src: url(assets/fonts/Outfit-Bold.woff) format("woff"),
-    url(assets/fonts/Outfit-Bold.woff2) format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+   font-family: "Outfit";
+   src: url(assets/fonts/Outfit-Bold.woff) format("woff"),
+      url(assets/fonts/Outfit-Bold.woff2) format("woff2");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
 }
 
 :root {
-  --white: #fff;
-  --light-gray: #d6e2f0;
-  --grayish-blue: #7b879d;
-  --dark-blue: #1f3251;
-  --mariner: #3e52a3;
+   --white: #fff;
+   --light-gray: #d6e2f0;
+   --grayish-blue: #7b879d;
+   --dark-blue: #1f3251;
+   --mariner: #3e52a3;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 html {
-  font-family: "Outfit", sans-serif;
-  font-size: 62.5%;
+   font-family: "Outfit", sans-serif;
+   font-size: 62.5%;
 }
 
 body {
-  background-color: var(--light-gray);
-  min-height: 100vh;
+   background-color: var(--light-gray);
+   min-height: 100vh;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
-img {
-  width: 100%;
-  border-radius: 1rem;
-  margin-bottom: 2rem;
+/**************************/
+/* QR CODE COMPONENT */
+/**************************/
+
+.qr {
+   background-color: var(--white);
+   font-size: 0.938rem;
+   max-width: 18.75rem;
+   margin: 1.25rem;
+   padding: 0.938rem;
+   border-radius: 1.25rem;
+   box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.1);
 }
 
-.component {
-  background-color: var(--white);
-  font-size: 1.5rem;
-  max-width: 30rem;
-  margin: 2rem;
-  padding: 1.5rem;
-  border-radius: 2rem;
-  box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.1);
+.qr__img {
+   width: 100%;
+   border-radius: 0.625rem;
+   padding-bottom: 1.25rem;
 }
 
-.component h1 {
-  text-align: center;
-  font-weight: 700;
-  color: var(--dark-blue);
-  margin-bottom: 1rem;
+.qr__heading {
+   text-align: center;
+   font-weight: 700;
+   color: var(--dark-blue);
+   padding-bottom: 0.625rem;
 }
 
-.component p {
-  text-align: center;
-  font-weight: 400;
-  color: var(--grayish-blue);
-  padding: 1rem;
-  margin-bottom: 1rem;
+.qr__paragraph {
+   text-align: center;
+   font-weight: 400;
+   color: var(--grayish-blue);
+   padding: 0.625rem 0.625rem 1.25rem 0.625rem;
 }
 
 .attribution {
-  font-size: 1.1rem;
-  text-align: center;
-  margin-bottom: 2rem;
+   font-size: 0.688rem;
+   text-align: center;
+   position: relative;
+   top: 0.75rem;
 }
 .attribution a {
-  color: var(--mariner);
+   color: var(--mariner);
 }
