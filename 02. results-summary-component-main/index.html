@@ -1,84 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Results summary component from frontent mentor site made by Zbigniew Slawik"
-    />
-    <meta name="author" content="Zbigniew Sławik" />
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+         name="description"
+         content="Results summary component from frontent mentor site made by Zbigniew Slawik"
+      />
+      <meta name="author" content="Zbigniew Sławik" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="./assets/images/favicon-32x32.png"
+      />
 
-    <title>Frontend Mentor | Results summary component</title>
+      <title>Frontend Mentor | Results summary component</title>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main>
-      <article class="component">
-        <div class="result">
-          <h2>Your Result</h2>
-          <div class="score">
-            <div class="total"><strong>76</strong></div>
-            <p>of 100</p>
-          </div>
-          <h3>Great</h3>
-          <p class="paragraph">
-            You scored higher than 65% of the people who have taken these tests.
-          </p>
-        </div>
-        <div class="summary">
-          <h2>Summary</h2>
-          <div class="reaction categories">
-            <div class="features">
-              <img src="assets/images/icon-reaction.svg" alt="#" />
-              <h3>Reaction</h3>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <main>
+         <article class="component">
+            <div class="component-result">
+               <h2 class="component-result__heading">Your Result</h2>
+               <div class="component-result__score">
+                  <div class="component-result__total"><strong>76</strong></div>
+                  <p class="component-result__of-100">of 100</p>
+               </div>
+               <h3 class="component-result__great">Great</h3>
+               <p class="component-result__paragraph">
+                  You scored higher than 65% of the people who have taken these
+                  tests.
+               </p>
             </div>
-            <p><span>80</span> / 100</p>
-          </div>
-          <div class="memory categories">
-            <div class="features">
-              <img src="assets/images/icon-memory.svg" alt="#" />
-              <h3>Memory</h3>
-            </div>
-            <p><span>92</span> / 100</p>
-          </div>
-          <div class="verbal categories">
-            <div class="features">
-              <img src="assets/images/icon-verbal.svg" alt="#" />
-              <h3>Verbal</h3>
-            </div>
-            <p><span>61</span> / 100</p>
-          </div>
-          <div class="visual categories">
-            <div class="features">
-              <img src="assets/images/icon-visual.svg" alt="#" />
-              <h3>Visual</h3>
-            </div>
-            <p><span>72</span> / 100</p>
-          </div>
-          <a class="btn" href="#">Continue</a>
-        </div>
-      </article>
-    </main>
 
-    <footer class="attribution">
-      <div>
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a href="https://github.com/ZbigniewSlawik" target="_blank"
-          >Zbigniew Sławik</a
-        >.
-      </div>
-    </footer>
-  </body>
+            <div class="component-summary">
+               <h2 class="component-summary__heading">Summary</h2>
+               <div
+                  class="component-summary__reaction component-summary__categories"
+               >
+                  <div class="component-summary__features">
+                     <img src="assets/images/icon-reaction.svg" alt="#" />
+                     <h3>Reaction</h3>
+                  </div>
+                  <p class="component-summary__of-100">
+                     <span class="component-summary__score">80</span> / 100
+                  </p>
+               </div>
+               <div
+                  class="component-summary__memory component-summary__categories"
+               >
+                  <div class="component-summary__features">
+                     <img src="assets/images/icon-memory.svg" alt="#" />
+                     <h3>Memory</h3>
+                  </div>
+                  <p class="component-summary__of-100">
+                     <span class="component-summary__score">92</span> / 100
+                  </p>
+               </div>
+               <div
+                  class="component-summary__verbal component-summary__categories"
+               >
+                  <div class="component-summary__features">
+                     <img src="assets/images/icon-verbal.svg" alt="#" />
+                     <h3>Verbal</h3>
+                  </div>
+                  <p class="component-summary__of-100">
+                     <span class="component-summary__score">61</span> / 100
+                  </p>
+               </div>
+               <div
+                  class="component-summary__visual component-summary__categories"
+               >
+                  <div class="component-summary__features">
+                     <img src="assets/images/icon-visual.svg" alt="#" />
+                     <h3>Visual</h3>
+                  </div>
+                  <p class="component-summary__of-100">
+                     <span class="component-summary__score">72</span> / 100
+                  </p>
+               </div>
+               <a class="btn" href="#">Continue</a>
+            </div>
+         </article>
+      </main>
+
+      <footer class="attribution">
+         <div>
+            Challenge by
+            <a
+               href="https://www.frontendmentor.io?ref=challenge"
+               target="_blank"
+               >Frontend Mentor</a
+            >. Coded by
+            <a href="https://github.com/ZbigniewSlawik" target="_blank"
+               >Zbigniew Sławik</a
+            >.
+         </div>
+      </footer>
+   </body>
 </html>
