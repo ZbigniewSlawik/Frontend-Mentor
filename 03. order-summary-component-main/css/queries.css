@@ -3,68 +3,66 @@
 /**************************/
 
 @media (max-width: 31.2em) {
-  body {
-    background-image: url("../assets/images/pattern-background-mobile.svg");
-  }
+   body {
+      background-image: url("../assets/images/pattern-background-mobile.svg");
+   }
 
-  .card {
-    margin: 5rem 1.563rem 1.25rem 1.563rem;
-    box-shadow: 0px 14px 15px 0px var(--bright-blue-shadow);
-  }
+   .card {
+      margin: 5rem 1.563rem 1.25rem 1.563rem;
+      box-shadow: 0px 14px 15px 0px var(--bright-blue-shadow);
+   }
 
-  .card__hero {
-    margin-bottom: 1.563rem;
-  }
+   .card__hero {
+      padding-bottom: 1.563rem;
+   }
 
-  .card__heading {
-    font-size: 1.375rem;
-    margin-bottom: 0.938rem;
-  }
+   .card__heading {
+      font-size: 1.375rem;
+      padding-bottom: 0.938rem;
+   }
 
-  .card__paragraph {
-    margin: 0 1.875rem 1.25rem 1.875rem;
-    line-height: 1.563rem;
-  }
+   .card__paragraph {
+      padding: 0 1.875rem 1.25rem 1.875rem;
+      line-height: 1.563rem;
+   }
 
-  .card__plan {
-    padding: 0.938rem;
-    margin: 0rem 1.563rem 1.563rem 1.563rem;
-  }
+   .card__plan {
+      padding: 0.938rem;
+      margin: 0rem 1.563rem 1.563rem 1.563rem;
+   }
 
-  .card__plan-heading{
-    font-size: 0.938rem;
-  }
+   .card__plan-heading {
+      font-size: 0.938rem;
+   }
 
-  .card__plan-paragraph {
-    font-size: 0.938rem;
-    margin: 0;
-  }
+   .card__plan-paragraph {
+      font-size: 0.938rem;
+      margin: 0;
+   }
 
-  .card__change:link,
-  .card__change:visited,
-  .card__change:hover,
-  .card__change:active {
-    font-size: 0.813rem;
-  }
+   .card__change:link,
+   .card__change:visited,
+   .card__change:hover,
+   .card__change:active {
+      font-size: 0.813rem;
+   }
 
-  .btn__payment:link,
-  .btn__payment:visited,
-  .btn__payment:hover,
-  .btn__payment:active {
-    font-size: 0.875rem;
-    margin: 0rem 1.563rem 1.25rem 1.563rem;
-  }
+   .btn__payment:link,
+   .btn__payment:visited,
+   .btn__payment:hover,
+   .btn__payment:active {
+      font-size: 0.875rem;
+      margin: 0rem 1.563rem 1.25rem 1.563rem;
+   }
 
-  .btn__order:link,
-  .btn__order:visited,
-  .btn__order:hover,
-  .btn__order:active {
-    font-size: 0.875rem;
-    margin: 0rem 1.563rem 1.25rem 1.563rem;
-  }
-  .attribution {
-    margin-bottom: 1.25rem;
-  }
-
-  /* Sprawdzić ten margines */
+   .btn__order:link,
+   .btn__order:visited,
+   .btn__order:hover,
+   .btn__order:active {
+      font-size: 0.875rem;
+      margin: 0rem 1.563rem 1.25rem 1.563rem;
+   }
+   .attribution {
+      margin-bottom: 1.25rem;
+   }
 }
