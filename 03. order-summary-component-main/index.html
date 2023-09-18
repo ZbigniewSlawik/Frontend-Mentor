@@ -1,62 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Order summary component from frontent mentor site made by Zbigniew Slawik"
-    />
-    <meta name="author" content="Zbigniew Sławik" />
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+         name="description"
+         content="Order summary component from frontent mentor site made by Zbigniew Slawik"
+      />
+      <meta name="author" content="Zbigniew Sławik" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/favicon-32x32.png"
-    />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="assets/images/favicon-32x32.png"
+         <!--
+         Czy
+         ścieżka
+         się
+         zgadza?
+         --
+      />
+      />
 
-    <title>Frontend Mentor | Order summary card</title>
+      <title>Frontend Mentor | Order summary card</title>
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
-  </head>
-  <body>
-    <main>
-      <article class="component">
-        <img
-          class="hero"
-          src="assets/images/illustration-hero.svg"
-          alt="Happy figure listening to music."
-        />
-        <h1>Order Summary</h1>
-        <p>
-          You can now listen to millions of songs, audiobooks, and podcasts on
-          any device anywhere you like!
-        </p>
-        <div class="plan">
-          <img src="assets/images/icon-music.svg" />
-          <h3>Annual Plan</h3>
-          <p>$59.99/year</p>
-          <a href="#">Change</a>
-        </div>
-        <div class="btn">
-          <a class="payment" href="#">Proceed to Payment</a>
-          <a class="order" href="#">Cancel Order</a>
-        </div>
-      </article>
-    </main>
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/queries.css" />
+   </head>
+   <body>
+      <main>
+         <article class="card">
+            <img
+               class="card__hero"
+               src="assets/images/illustration-hero.svg"
+               alt="Happy figure listening to music."
+            />
+            <h1 class="card__heading">Order Summary</h1>
+            <p class="card__paragraph">
+               You can now listen to millions of songs, audiobooks, and podcasts
+               on any device anywhere you like!
+            </p>
+            <div class="card__plan">
+               <img class="card__icon" src="assets/images/icon-music.svg" />
+               <h3 class="card__plan-heading">Annual Plan</h3>
+               <p class="card__plan-paragraph">$59.99/year</p>
+               <a class="card__change" href="#">Change</a>
+            </div>
+            <div class="btn">
+               <a class="btn__payment" href="#">Proceed to Payment</a>
+               <a class="btn__order" href="#">Cancel Order</a>
+            </div>
+         </article>
+      </main>
 
-    <footer class="attribution">
-      <div>
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a href="https://github.com/ZbigniewSlawik" target="_blank"
-          >Zbigniew Sławik</a
-        >.
-      </div>
-    </footer>
-  </body>
+      <footer class="attribution">
+         <div>
+            Challenge by
+            <a
+               href="https://www.frontendmentor.io?ref=challenge"
+               target="_blank"
+               >Frontend Mentor</a
+            >. Coded by
+            <a href="https://github.com/ZbigniewSlawik" target="_blank"
+               >Zbigniew Sławik</a
+            >.
+         </div>
+      </footer>
+   </body>
 </html>
