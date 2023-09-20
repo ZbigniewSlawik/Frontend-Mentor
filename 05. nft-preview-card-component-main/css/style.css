@@ -53,21 +53,47 @@ body {
    border-radius: 0.725rem;
 }
 
-.nft-card__img-container {
+.nft-card__container-img {
+   max-width: 100%;
    position: relative;
 }
 
 .nft-card__img {
    max-width: 100%;
+   display: block;
    margin-bottom: 1rem;
    border-radius: 0.625rem;
-   opacity: 1;
 }
 
-.nft-card__img:hover {
-   opacity: 0.5;
-   cursor: pointer;
-   background-color: red;
+.nft-card__hover-background {
+   /* background-color: var(--cyan); */
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin-bottom: 1rem;
+   border-radius: 0.625rem;
+   height: 100%;
+   opacity: 0;
+}
+
+.nft-card__hover-background:hover {
+   opacity: 0.7;
+}
+
+.background {
+   background-color: var(--cyan);
+}
+
+.nft-card__hover-icon {
+   position: absolute;
+   top: calc(50% - 1.5rem);
+   left: calc(50% - 1.5rem);
+}
+
+.nft-card__hover-icon:hover {
+   opacity: 1 !important;
 }
 
 .nft-card__heading-link:link,
