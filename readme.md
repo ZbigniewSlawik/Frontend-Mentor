@@ -21,3 +21,7 @@ A collection of my frontend challenges from the [Frontend Mentor](https://www.fr
 #### 04. Product preview card component
 
 [Github](https://github.com/ZbigniewSlawik/Frontend-Mentor/tree/main/04.%20product-preview-card-component-main) &emsp;&emsp;&emsp;&emsp;[Live server](https://zbigniew-slawik-product-preview-card.netlify.app/)&emsp;&emsp;&emsp;&emsp;[Frontend Mentor Solution](https://www.frontendmentor.io/solutions/product-preview-card-component-by-zbigniew-sawik-vZlp55DAQY)
+
+#### 05. NFT preview card component
+
+[Github](https://github.com/ZbigniewSlawik/Frontend-Mentor/tree/main/06.%20stats-preview-card-component-main) &emsp;&emsp;&emsp;&emsp;[Live server](https://zbigniew-slawik-nft-preview-card.netlify.app/)&emsp;&emsp;&emsp;&emsp;[Frontend Mentor Solution](https://www.frontendmentor.io/solutions/nft-preview-card-component-by-zbigniew-sawik-WB8MLsg8fC)
