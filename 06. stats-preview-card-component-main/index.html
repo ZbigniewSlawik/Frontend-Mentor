@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+         name="description"
+         content="Stats preview card component from frontent mentor site made by Zbigniew Slawik"
+      />
+      <meta name="author" content="Zbigniew Sławik" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="assets/images/favicon-32x32.png"
+      />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <title>Frontend Mentor | Stats preview card component</title>
 
-  Get insights that help your business grow.
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <main>
+         <article class="stats-card">
+            <div class="stats-card__text">
+               <h1 class="stats-card__heading">
+                  Get
+                  <span class="stats-card__heading-span">insights</span> that
+                  help your business grow.
+               </h1>
+               <p class="stats-card__description">
+                  Discover the benefits of data analytics and make better
+                  decisions regarding revenue, customer experience, and overall
+                  efficiency.
+               </p>
+               <div class="stats-card__stats">
+                  <p class="stats-card__stats-numbers">10k+</p>
+                  <p class="stats-card__stats-numbers">314</p>
+                  <p class="stats-card__stats-numbers">12m+</p>
+                  <p class="stats-card__stats-text">companies</p>
+                  <p class="stats-card__stats-text">templates</p>
+                  <p class="stats-card__stats-text">queries</p>
+               </div>
+            </div>
+            <img
+               src="assets/images/image-header-desktop.jpg"
+               alt="A group of smiling women writing code"
+               class="stats-card__img"
+            />
+         </article>
+      </main>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <footer class="attribution">
+         <div>
+            Challenge by
+            <a
+               href="https://www.frontendmentor.io?ref=challenge"
+               target="_blank"
+               >Frontend Mentor</a
+            >. Coded by
+            <a href="https://github.com/ZbigniewSlawik" target="_blank"
+               >Zbigniew Sławik</a
+            >.
+         </div>
+      </footer>
+   </body>
 </html>

@@ -17,3 +17,102 @@
    font-weight: 0 900;
    font-display: swap;
 }
+
+:root {
+   /* ### Primary */
+   --dark-blue-main-background: #090b1a;
+   --desaturated-blue-card-background: #1b1938;
+   --soft-violet-accent: #aa5cdb;
+
+   /* ### Neutral */
+   --white-main-heading-stats: hsl(0, 0%, 100%);
+   --transparent-white-main-paragraph: rgba(255, 255, 255, 0.75);
+   --transparent-white-stat-headings: rgba(255, 255, 255, 0.6);
+}
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   /* background-color: var(--dark-blue-main-background); */
+   background-color: red;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.stats-card {
+   background-color: var(--desaturated-blue-card-background);
+   border-radius: 0.625rem;
+
+   max-width: 75rem;
+   /* position: absolute; */
+   display: flex;
+}
+
+.stats-card__text {
+   color: var(--white-main-heading-stats);
+   font-family: "Inter", sans-serif;
+   font-size: 0.938rem;
+   font-weight: 400;
+   max-width: 50%;
+}
+
+.stats-card__heading {
+   color: var(--white-main-heading-stats);
+   font: 700 1.875rem "Inter", sans-serif;
+   padding-bottom: 2rem;
+}
+
+.stats-card__heading-span {
+   color: var(--soft-violet-accent);
+}
+
+.stats-card__description {
+   color: var(--transparent-white-main-paragraph);
+   font: 400 0.938rem "Lexend Deca", sans-serif;
+}
+
+.stats-card__stats {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 1fr 1fr;
+}
+
+.stats-card__stats-numbers {
+   font: 700 1.875rem "Inter", sans-serif;
+}
+
+.stats-card__stats-text {
+   color: var(--transparent-white-stat-headings);
+   font: 400 0.938rem "Lexend Deca", sans-serif;
+   text-transform: uppercase;
+}
+
+.stats-card__ .stats-card__img {
+   background-image: linear-gradient(var(--soft-violet-accent));
+   max-width: 50%;
+   border-radius: 0 0.625rem 0.625rem 0;
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+.attribution {
+   color: var(--white-main-heading-stats);
+   font-size: 0.688rem;
+   text-align: center;
+   /* position: relative; */
+   top: 2rem;
+}
+.attribution a {
+   color: var(--soft-violet-accent);
+}
