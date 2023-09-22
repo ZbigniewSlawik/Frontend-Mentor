@@ -39,8 +39,7 @@
 }
 
 body {
-   /* background-color: var(--dark-blue-main-background); */
-   background-color: red;
+   background-color: var(--dark-blue-main-background);
    min-height: 100vh;
    display: flex;
    flex-direction: column;
@@ -48,26 +47,25 @@ body {
    align-items: center;
 }
 
+/**************************/
+/* STATS CARD */
+/**************************/
+
 .stats-card {
    background-color: var(--desaturated-blue-card-background);
    border-radius: 0.625rem;
-
-   max-width: 75rem;
-   /* position: absolute; */
+   max-width: 71rem;
    display: flex;
 }
 
 .stats-card__text {
-   color: var(--white-main-heading-stats);
-   font-family: "Inter", sans-serif;
-   font-size: 0.938rem;
-   font-weight: 400;
    max-width: 50%;
+   padding: 4rem 6rem 3rem 5rem;
 }
 
 .stats-card__heading {
    color: var(--white-main-heading-stats);
-   font: 700 1.875rem "Inter", sans-serif;
+   font: 700 2.275rem "Inter", sans-serif;
    padding-bottom: 2rem;
 }
 
@@ -77,28 +75,36 @@ body {
 
 .stats-card__description {
    color: var(--transparent-white-main-paragraph);
-   font: 400 0.938rem "Lexend Deca", sans-serif;
+   font: 400 0.938rem/1.5rem "Lexend Deca", sans-serif;
+   padding-bottom: 4.4rem;
 }
 
 .stats-card__stats {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-template-rows: 1fr 1fr;
+   row-gap: 0.3rem;
 }
 
 .stats-card__stats-numbers {
-   font: 700 1.875rem "Inter", sans-serif;
+   color: var(--white-main-heading-stats);
+   font: 700 1.5rem "Inter", sans-serif;
 }
 
 .stats-card__stats-text {
    color: var(--transparent-white-stat-headings);
-   font: 400 0.938rem "Lexend Deca", sans-serif;
+   font: 400 0.8rem "Lexend Deca", sans-serif;
    text-transform: uppercase;
 }
 
-.stats-card__ .stats-card__img {
-   background-image: linear-gradient(var(--soft-violet-accent));
-   max-width: 50%;
+.stats-card__img {
+   background-image: url("../assets/images/image-header-desktop.jpg");
+   background-color: var(--soft-violet-accent);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-blend-mode: multiply;
+   width: 100%;
+   height: auto;
    border-radius: 0 0.625rem 0.625rem 0;
 }
 
@@ -110,7 +116,7 @@ body {
    color: var(--white-main-heading-stats);
    font-size: 0.688rem;
    text-align: center;
-   /* position: relative; */
+   position: relative;
    top: 2rem;
 }
 .attribution a {
