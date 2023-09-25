@@ -97,7 +97,7 @@ body {
    text-transform: uppercase;
 }
 
-.stats-card__img {
+/* .stats-card__img {
    background-image: url("../assets/images/image-header-desktop.jpg");
    background-color: var(--soft-violet-accent);
    background-size: cover;
@@ -105,6 +105,33 @@ body {
    background-blend-mode: multiply;
    width: 100%;
    height: auto;
+   border-radius: 0 0.625rem 0.625rem 0;
+} */
+
+.stats-card__img-container {
+   width: 50%;
+   position: relative;
+}
+
+.stats-card__img-desktop {
+   width: 100%;
+   height: auto;
+   border-radius: 0 0.625rem 0.625rem 0;
+}
+
+.stats-card__img-mobile {
+   display: none;
+}
+
+.stats-card__img-background::after {
+   background-color: var(--soft-violet-accent);
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   content: "";
+   opacity: 0.5;
    border-radius: 0 0.625rem 0.625rem 0;
 }
 

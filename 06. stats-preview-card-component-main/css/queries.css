@@ -2,8 +2,19 @@
 /* BELOW 1120px */
 /**************************/
 
-@media (max-width: 70em) {
+/* @media (max-width: 70em) {
    .stats-card {
-      /* flex-direction: column; */
+      margin: 2rem;
+      flex-direction: column-reverse;
+      align-items: center;
+      max-width: min-content;
    }
-}
+
+   .stats-card__img-desktop {
+      display: none;
+   }
+
+   .stats-card__img-mobile {
+      display: inline-block;
+   }
+} */
