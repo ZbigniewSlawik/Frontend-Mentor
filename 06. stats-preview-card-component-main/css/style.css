@@ -75,7 +75,7 @@ body {
 
 .stats-card__description {
    color: var(--transparent-white-main-paragraph);
-   font: 400 0.938rem/1.5rem "Lexend Deca", sans-serif;
+   font: 400 0.938rem/1.5rem "Inter", sans-serif;
    padding-bottom: 4.4rem;
 }
 
@@ -97,17 +97,6 @@ body {
    text-transform: uppercase;
 }
 
-/* .stats-card__img {
-   background-image: url("../assets/images/image-header-desktop.jpg");
-   background-color: var(--soft-violet-accent);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-blend-mode: multiply;
-   width: 100%;
-   height: auto;
-   border-radius: 0 0.625rem 0.625rem 0;
-} */
-
 .stats-card__img-container {
    width: 50%;
    position: relative;
@@ -115,7 +104,7 @@ body {
 
 .stats-card__img-desktop {
    width: 100%;
-   height: auto;
+   height: 100%;
    border-radius: 0 0.625rem 0.625rem 0;
 }
 
