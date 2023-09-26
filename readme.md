@@ -29,3 +29,7 @@ A collection of my frontend challenges from the [Frontend Mentor](https://www.fr
 #### 06. Stats preview card component
 
 [Github](https://github.com/ZbigniewSlawik/Frontend-Mentor/tree/main/06.%20stats-preview-card-component-main) &emsp;&emsp;&emsp;&emsp;[Live server](https://zbigniew-slawik-stats-preview-card.netlify.app/)&emsp;&emsp;&emsp;&emsp;[Frontend Mentor Solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-by-zbigniew-sawik-yf2iz6unBs)
+
+#### 07. 3 column preview card component
+
+[Github](https://github.com/ZbigniewSlawik/Frontend-Mentor/tree/main/07.%203-column-preview-card-component-main) &emsp;&emsp;&emsp;&emsp;[Live server](https://zbigniew-slawik-3-column-card.netlify.app/)&emsp;&emsp;&emsp;&emsp;[Frontend Mentor Solution](https://www.frontendmentor.io/solutions/3-column-preview-card-component-by-zbigniew-sawik-HGD0FNjG1M)

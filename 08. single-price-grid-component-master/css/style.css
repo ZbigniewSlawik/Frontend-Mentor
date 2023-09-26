@@ -1,0 +1,27 @@
+@font-face {
+   font-family: "Karla";
+   src: url("../assets/fonts/Karla-VariableFont_wght.woff2")
+         format("woff2-variations"),
+      url("../assets/fonts/Karla-VariableFont_wght.woff")
+         format("woff-variations");
+   font-weight: 200 800;
+   font-display: swap;
+}
+
+:root {
+   --mariner: #3e52a3;
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+.attribution {
+   font-size: 0.688rem;
+   text-align: center;
+   position: relative;
+   top: 2rem;
+}
+.attribution a {
+   color: var(--mariner);
+}

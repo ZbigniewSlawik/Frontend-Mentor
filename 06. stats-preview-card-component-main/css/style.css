@@ -115,13 +115,11 @@ body {
 .stats-card__img-background::after {
    background-color: var(--soft-violet-accent);
    position: absolute;
-   top: 0;
-   right: 0;
-   left: 0;
-   bottom: 0;
+   inset: 0 0 0 0;
    content: "";
-   opacity: 0.5;
+   opacity: 0.8;
    border-radius: 0 0.625rem 0.625rem 0;
+   mix-blend-mode: multiply;
 }
 
 /**************************/
