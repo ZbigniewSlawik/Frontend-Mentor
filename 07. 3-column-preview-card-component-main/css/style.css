@@ -37,6 +37,68 @@
    box-sizing: border-box;
 }
 
+body {
+   background-color: var(--gray-background-headings-buttons);
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+/**************************/
+/* GENERAL */
+/**************************/
+
+.three-column__container {
+   margin: 0 1.5rem;
+   padding: 3rem;
+   font: 400 0.938rem/1.5rem "Lexend Deca", sans-serif;
+}
+
+.three-column__icon {
+   padding-bottom: 1.5rem;
+}
+
+.three-column__heading {
+   color: var(--gray-background-headings-buttons);
+   font: 700 2.5rem "Big Shoulders Display", sans-serif;
+   text-transform: uppercase;
+   padding-bottom: 1.5rem;
+}
+
+.three-column__description {
+   color: var(--transparent-white-paragraphs);
+   padding-bottom: 1.5rem;
+}
+
+/**************************/
+/* SEDANS */
+/**************************/
+
+.three-column__container--sedans {
+   background-color: var(--bright-orange);
+   margin-top: 6rem;
+   border-radius: 0.625rem 0.625rem 0 0;
+}
+
+/**************************/
+/* SUVS */
+/**************************/
+
+.three-column__container--suvs {
+   background-color: var(--dark-cyan);
+}
+
+/**************************/
+/* LUXURY */
+/**************************/
+
+.three-column__container--luxury {
+   background-color: var(--very-dark-cyan);
+   border-radius: 0 0 0.625rem 0.625rem;
+}
+
 /**************************/
 /* FOOTER */
 /**************************/
