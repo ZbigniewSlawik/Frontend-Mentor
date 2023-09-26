@@ -27,6 +27,7 @@
    /* ### Neutral */
    --transparent-white-paragraphs: rgba(255, 255, 255, 0.75);
    --gray-background-headings-buttons: #f2f2f2;
+   --mariner: #3e52a3;
 }
 
 *,
@@ -51,9 +52,9 @@ body {
 /**************************/
 
 .three-column__container {
-   margin: 0 1.5rem;
-   padding: 3rem;
    font: 400 0.938rem/1.5rem "Lexend Deca", sans-serif;
+   margin: 0 1.5rem;
+   padding: 3.2rem;
 }
 
 .three-column__icon {
@@ -72,6 +73,15 @@ body {
    padding-bottom: 1.5rem;
 }
 
+.btn {
+   background-color: var(--gray-background-headings-buttons);
+   font: 400 0.938rem "Lexend Deca", sans-serif;
+   padding: 1rem 2rem;
+   border: none;
+   border-radius: 2rem;
+   border: 2px transparent solid;
+}
+
 /**************************/
 /* SEDANS */
 /**************************/
@@ -82,12 +92,20 @@ body {
    border-radius: 0.625rem 0.625rem 0 0;
 }
 
+.btn--sedans {
+   color: var(--bright-orange);
+}
+
 /**************************/
 /* SUVS */
 /**************************/
 
 .three-column__container--suvs {
    background-color: var(--dark-cyan);
+}
+
+.btn--suvs {
+   color: var(--dark-cyan);
 }
 
 /**************************/
@@ -99,17 +117,21 @@ body {
    border-radius: 0 0 0.625rem 0.625rem;
 }
 
+.btn--luxury {
+   color: var(--very-dark-cyan);
+}
+
 /**************************/
 /* FOOTER */
 /**************************/
 
 .attribution {
-   color: var(--white-main-heading-stats);
    font-size: 0.688rem;
    text-align: center;
    position: relative;
    top: 2rem;
+   margin-bottom: 3rem;
 }
 .attribution a {
-   color: var(--soft-violet-accent);
+   color: var(--mariner);
 }

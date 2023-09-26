@@ -1,0 +1,35 @@
+/**************************/
+/* DESKTOP */
+/**************************/
+
+@media (min-width: 60.625em) {
+   .three-column {
+      max-width: 62.5rem;
+      display: flex;
+   }
+
+   .three-column__container {
+      margin: 0;
+      padding: 3.9rem;
+   }
+
+   .three-column__container--sedans {
+      border-radius: 0.625rem 0 0 0.625rem;
+   }
+
+   .three-column__container--luxury {
+      border-radius: 0 0.625rem 0.625rem 0;
+   }
+
+   .three-column__description {
+      padding-bottom: 6rem;
+   }
+
+   .btn:hover,
+   .btn:active {
+      color: white;
+      cursor: pointer;
+      background-color: transparent;
+      border: 2px white solid;
+   }
+}
