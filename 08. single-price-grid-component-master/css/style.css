@@ -9,7 +9,142 @@
 }
 
 :root {
+   /* ### Primary */
+   --white: #fff;
+   --cyan: #2ab2af;
+   --cyan-light: rgba(42, 178, 176, 0.7);
+   --bright-yellow: #c0df34;
+
+   /* ### Neutral */
+   --light-gray: #e5eff5;
+   --very-light-gray: rgba(229, 239, 245, 0.6);
+   --grayish-blue: #98a6bd;
    --mariner: #3e52a3;
+}
+
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font: 400 1rem/1.5rem "Karla", sans-serif;
+}
+
+body {
+   background-color: var(--light-gray);
+   min-height: 100vh;
+   margin: 4rem 1.5rem 0 1.5rem;
+}
+
+/**************************/
+/* GENERAL*/
+/**************************/
+
+.price-grid {
+   box-shadow: ;
+}
+
+.price-grid > * {
+   padding: 1.5rem;
+}
+
+.price-grid > * > * {
+   padding-bottom: 1rem;
+}
+
+.price-grid__second-heading {
+   font-size: 1rem;
+}
+
+.btn {
+   padding: 0.7rem 6.94rem;
+   border: none;
+   border-radius: 0.4rem;
+}
+
+/**************************/
+/* JOIN*/
+/**************************/
+.price-grid__join {
+   background-color: var(--white);
+   border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.price-grid__first-heading {
+   color: var(--cyan);
+   font-size: 1.3rem;
+}
+
+.price-grid__second-heading--join {
+   font-size: 0.95rem;
+   color: var(--bright-yellow);
+}
+
+.price-grid__description--join {
+   color: var(--grayish-blue);
+   font-size: 0.9rem;
+   padding-bottom: 0.5rem;
+}
+
+/**************************/
+/* SUBSCRIPTON*/
+/**************************/
+
+.price-grid__subscription {
+   background-color: var(--cyan);
+   color: var(--light-gray);
+}
+
+.price-grid__second-heading--sub {
+   font-size: 1.1rem;
+}
+
+.price-grid__price-flex {
+   display: flex;
+   gap: 1rem;
+}
+
+.price-grid__price {
+   color: var(--light-gray);
+   font-size: 2rem;
+   font-weight: 700;
+}
+
+.price-grid__text {
+   color: var(--very-light-gray);
+   font-size: 0.9rem;
+}
+
+.price-grid__description--sub {
+   padding-bottom: 2rem;
+}
+
+.price-grid .btn--sub {
+   color: var(--white);
+   background-color: var(--bright-yellow);
+   font: 400 1rem/1.5rem "Karla", sans-serif;
+   box-shadow: ;
+}
+
+/**************************/
+/* WHY US*/
+/**************************/
+
+.price-grid__why-us {
+   color: var(--white);
+   background-color: var(--cyan-light);
+   border-radius: 0 0 0.625rem 0.625rem;
+}
+
+.price-grid__description--us {
+   color: var(--light-gray);
+   font-size: 0.8rem;
+   line-height: 1.2rem;
+   padding-bottom: 0;
 }
 
 /**************************/
