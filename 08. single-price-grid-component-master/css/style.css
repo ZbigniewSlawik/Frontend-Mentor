@@ -24,6 +24,10 @@
    --mariner: #3e52a3;
 }
 
+/**************************/
+/* GENERAL*/
+/**************************/
+
 *,
 *::after,
 *::before {
@@ -41,10 +45,6 @@ body {
    min-height: 100vh;
    margin: 4rem 2rem 0 2rem;
 }
-
-/**************************/
-/* GENERAL*/
-/**************************/
 
 .price-grid {
    border-radius: 0 0 0.625rem 0.625rem;
