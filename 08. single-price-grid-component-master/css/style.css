@@ -18,6 +18,8 @@
    /* ### Neutral */
    --light-gray: #e5eff5;
    --very-light-gray: rgba(229, 239, 245, 0.6);
+   --main-box-shadow: #a3c6db;
+   --btn-box-shadow: #26a19f;
    --grayish-blue: #98a6bd;
    --mariner: #3e52a3;
 }
@@ -37,7 +39,7 @@ html {
 body {
    background-color: var(--light-gray);
    min-height: 100vh;
-   margin: 4rem 1.5rem 0 1.5rem;
+   margin: 4rem 2rem 0 2rem;
 }
 
 /**************************/
@@ -45,7 +47,8 @@ body {
 /**************************/
 
 .price-grid {
-   box-shadow: ;
+   border-radius: 0 0 0.625rem 0.625rem;
+   box-shadow: 0px 10px 19px -1px var(--main-box-shadow);
 }
 
 .price-grid > * {
@@ -61,7 +64,9 @@ body {
 }
 
 .btn {
-   padding: 0.7rem 6.94rem;
+   display: inline-block;
+   width: 100%;
+   padding: 0.7rem 0;
    border: none;
    border-radius: 0.4rem;
 }
@@ -86,7 +91,7 @@ body {
 
 .price-grid__description--join {
    color: var(--grayish-blue);
-   font-size: 0.9rem;
+   font-size: 0.86rem;
    padding-bottom: 0.5rem;
 }
 
@@ -127,7 +132,7 @@ body {
    color: var(--white);
    background-color: var(--bright-yellow);
    font: 400 1rem/1.5rem "Karla", sans-serif;
-   box-shadow: ;
+   box-shadow: 0px 10px 19px -1px var(--btn-box-shadow);
 }
 
 /**************************/

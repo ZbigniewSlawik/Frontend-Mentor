@@ -1,0 +1,49 @@
+@media (min-width: 43.75em) {
+   body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .price-grid {
+      max-width: 40.625rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1 1;
+      border-radius: 0.625rem;
+   }
+
+   .price-grid > * {
+      padding: 2.7rem;
+   }
+
+   .price-grid__join {
+      grid-area: 1 / 1 / 2 / 3;
+   }
+
+   .price-grid__first-heading {
+      font-size: 1.5rem;
+      padding-bottom: 1.5rem;
+   }
+
+   .price-grid__second-heading--join {
+      font-size: 1.11rem;
+   }
+
+   .price-grid__description--join {
+      font-size: 1rem;
+   }
+
+   .price-grid__subscription {
+      border-radius: 0 0 0 0.625rem;
+   }
+
+   .price-grid__second-heading--sub {
+      font-size: 1.15rem;
+   }
+
+   .price-grid__why-us {
+      border-radius: 0 0 0.625rem 0;
+   }
+}
