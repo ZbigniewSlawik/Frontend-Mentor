@@ -1,10 +1,24 @@
 @font-face {
-   font-family: "Karla";
-   src: url("../assets/fonts/Karla-VariableFont_wght.woff2")
-         format("woff2-variations"),
-      url("../assets/fonts/Karla-VariableFont_wght.woff")
-         format("woff-variations");
-   font-weight: 200 800;
+   font-family: "Poppins";
+   src: url("../assets/fonts/Poppins-ExtraLight.woff2") format("woff2"),
+      url("../assets/fonts/Poppins-ExtraLight.woff") format("woff");
+   font-weight: 200;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Poppins";
+   src: url("../assets/fonts/Poppins-Regular.woff2") format("woff2"),
+      url("../assets/fonts/Poppins-Regular.woff") format("woff");
+   font-weight: 400;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Poppins";
+   src: url("../assets/fonts/Poppins-SemiBold.woff2") format("woff2"),
+      url("../assets/fonts/Poppins-SemiBold.woff") format("woff");
+   font-weight: 600;
    font-display: swap;
 }
 
@@ -18,8 +32,11 @@
    /* ### Neutral */
    --very-dark-blue: #4c4e61;
    --grayish-blue: #a3a5ae;
+   --grayish-text: rgba(163, 165, 174, 0.8);
    --very-light-gray: #fafafa;
+   --white: #fff;
    --mariner: #3e52a3;
+   --mariner-box-shadow: rgba(62, 82, 163, 0.2);
 }
 
 /**************************/
@@ -34,9 +51,87 @@
    box-sizing: border-box;
 }
 
+html {
+   font: 400 0.938rem "Poppins", sans-serif;
+}
+
+body {
+   background-color: var(--very-light-gray);
+   min-height: 100vh;
+}
+
+.four-card__container {
+   background-color: var(--white);
+   padding: 1.9rem;
+   margin-bottom: 1.5rem;
+   box-shadow: 0 10px 10px 5px var(--mariner-box-shadow);
+   border-top: 0.313rem solid black;
+   border-radius: 0.375rem;
+}
+
+.four-card__second-heading {
+   color: var(--very-dark-blue);
+   font-size: 1.35rem;
+   font-weight: 600;
+}
+
+.four-card__text {
+   color: var(--grayish-blue);
+   font-size: 0.9rem;
+   padding-bottom: 2.5rem;
+}
+
+.four-card__box-icon {
+   display: flex;
+   justify-content: end;
+}
+
 /**************************/
-/* GENERAL*/
+/* FOUR CARD   */
 /**************************/
+
+.four-card {
+   margin: 6rem 2rem 0 2rem;
+}
+
+.four-card__description {
+   margin-bottom: 1.5rem;
+   text-align: center;
+}
+
+.four-card__first-heading {
+   color: var(--very-dark-blue);
+   font-size: 1.6rem;
+   font-weight: 200;
+}
+
+.four-card__second-heading--description {
+   color: var(--very-dark-blue);
+   font-weight: 600;
+   font-size: 1.6rem;
+   padding-bottom: 1rem;
+}
+
+.four-card__text--description {
+   color: var(--grayish-text);
+   padding-bottom: 3rem;
+}
+
+.four-card__supervisor {
+   border-color: var(--cyan);
+}
+
+.four-card__team {
+   border-color: var(--red);
+}
+
+.four-card__karma {
+   border-color: var(--orange);
+}
+
+.four-card__calculator {
+   border-color: var(--blue);
+}
 
 /**************************/
 /* FOOTER */
@@ -47,6 +142,7 @@
    text-align: center;
    position: relative;
    top: 2rem;
+   margin-bottom: 5rem;
 }
 .attribution a {
    color: var(--mariner);

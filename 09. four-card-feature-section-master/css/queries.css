@@ -1,0 +1,58 @@
+@media (min-width: 75em) {
+   body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .four-card {
+      max-width: 77.5rem;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .four-card__description {
+      max-width: 40rem;
+   }
+
+   .four-card__second-heading--description,
+   .four-card__first-heading {
+      font-size: 2.65rem;
+   }
+
+   .four-card__text--description {
+      font-size: 1.1rem;
+   }
+
+   .four-card__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+      row-gap: 2rem;
+      column-gap: 2rem;
+   }
+
+   .four-card__container {
+      margin-bottom: 0;
+   }
+
+   .four-card__second-heading {
+      padding-bottom: 2rem;
+   }
+
+   .four-card .four-card__supervisor {
+      grid-area: 1 / 1 / 3 / 2;
+   }
+
+   .four-card__karma {
+      grid-area: 2 / 2 / 3 / 3;
+   }
+
+   .four-card__calculator {
+      grid-area: 1 / 3 / 3 / 4;
+   }
+}
