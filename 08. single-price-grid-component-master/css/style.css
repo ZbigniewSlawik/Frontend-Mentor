@@ -128,7 +128,7 @@ body {
    padding-bottom: 2rem;
 }
 
-.price-grid .btn--sub {
+.btn--sub {
    color: var(--white);
    background-color: var(--bright-yellow);
    font: 400 1rem/1.5rem "Karla", sans-serif;
