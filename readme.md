@@ -33,3 +33,7 @@ A collection of my frontend challenges from the [Frontend Mentor](https://www.fr
 #### 07. 3 column preview card component
 
 [Github](https://github.com/ZbigniewSlawik/Frontend-Mentor/tree/main/07.%203-column-preview-card-component-main) &emsp;&emsp;&emsp;&emsp;[Live server](https://zbigniew-slawik-3-column-card.netlify.app/)&emsp;&emsp;&emsp;&emsp;[Frontend Mentor Solution](https://www.frontendmentor.io/solutions/3-column-preview-card-component-by-zbigniew-sawik-HGD0FNjG1M)
+
+#### 08. Single price grid component
+
+[Github](https://github.com/ZbigniewSlawik/Frontend-Mentor/tree/main/08.%20single-price-grid-component-master) &emsp;&emsp;&emsp;&emsp;[Live server](https://zbigniew-slawik-single-price-grid.netlify.app/)&emsp;&emsp;&emsp;&emsp;[Frontend Mentor Solution](https://www.frontendmentor.io/solutions/single-price-grid-component-by-zbigniew-sawik-PHSlfqU3D-)
