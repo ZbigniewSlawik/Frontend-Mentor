@@ -1,0 +1,145 @@
+@font-face {
+   font-family: "League Spartan";
+   src: url("../assets/fonts/LeagueSpartan-VariableFont_wght.woff2")
+         format("woff2-variations"),
+      url("../assets/fonts/LeagueSpartan-VariableFont_wght.woff")
+         format("woff-variations");
+   font-weight: 0 900;
+   font-display: swap;
+}
+
+:root {
+   /* ### Primary */
+   --very-dark-magenta: #502050;
+   --soft-pink: #ee68a4;
+
+   /* ### Neutral */
+   --dark-grayish-magenta: #937b92;
+   --light-grayish-magenta: #f7f2f7;
+   --white: #ffffff;
+   --mariner: #3e52a3;
+   --mariner-box-shadow: rgba(62, 82, 163, 0.2);
+}
+
+/**************************/
+/* GENERAL*/
+/**************************/
+
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font: 400 0.938rem/1.5rem "League Spartan", sans-serif;
+}
+
+body {
+   background-image: url(../assets/images/bg-pattern-top-mobile.svg),
+      url(../assets/images/bg-pattern-bottom-mobile.svg);
+   background-repeat: no-repeat, no-repeat;
+   background-position: top left, bottom right;
+   min-height: 100vh;
+}
+.social {
+   margin: 5.5rem 1.5rem 0 1.5rem;
+}
+
+.social__header {
+   text-align: center;
+}
+
+.header__heading {
+   color: var(--very-dark-magenta);
+   font-size: 2.7rem;
+   font-weight: 700;
+   line-height: 2rem;
+   letter-spacing: -0.1rem;
+   padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.header__text {
+   color: var(--dark-grayish-magenta);
+   font-size: 1.16rem;
+   font-weight: 500;
+   padding-bottom: 2rem;
+}
+
+.rating__box {
+   background-color: var(--light-grayish-magenta);
+   text-align: center;
+   margin-bottom: 1rem;
+   border-radius: 0.625rem;
+   padding: 1rem;
+}
+
+.rating__box:last-child {
+   margin-bottom: 3rem;
+}
+
+.rating__stars {
+   display: flex;
+   justify-content: center;
+   gap: 0.5rem;
+   padding-bottom: 0.7rem;
+}
+
+.rating__text {
+   color: var(--very-dark-magenta);
+   font-size: 1.15rem;
+   font-weight: 700;
+}
+
+.comments__comment {
+   background-color: var(--very-dark-magenta);
+   padding: 2rem;
+   margin-bottom: 1rem;
+   border-radius: 0.625rem;
+}
+
+.comment__header {
+   display: flex;
+   gap: 1.5rem;
+   padding-bottom: 1.5rem;
+}
+
+.comment__image {
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+}
+
+.comment__author {
+   color: var(--white);
+   font-size: 1.15rem;
+   font-weight: 500;
+}
+
+.comment__verified {
+   color: var(--soft-pink);
+   font-size: 1.1rem;
+   font-weight: 400;
+}
+
+.comment__text {
+   color: var(--light-grayish-magenta);
+   font-size: 1.12rem;
+}
+
+/**************************/
+/* FOOTER*/
+/**************************/
+
+.attribution {
+   font-size: 0.688rem;
+   text-align: center;
+   position: relative;
+   top: 2rem;
+   margin-bottom: 5rem;
+}
+.attribution a {
+   color: var(--soft-pink);
+}
