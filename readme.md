@@ -41,3 +41,7 @@ A collection of my frontend challenges from the [Frontend Mentor](https://www.fr
 #### 09. Four card feature section
 
 [Github](https://github.com/ZbigniewSlawik/Frontend-Mentor/tree/main/09.%20four-card-feature-section-master) &emsp;&emsp;&emsp;&emsp;[Live server](https://zbigniew-slawik-four-card-section.netlify.app/)&emsp;&emsp;&emsp;&emsp;[Frontend Mentor Solution](https://www.frontendmentor.io/solutions/four-card-feature-section-by-zbigniew-sawik-xe_5CYh9U5)
+
+#### 10. Social proof section
+
+[Github](https://github.com/ZbigniewSlawik/Frontend-Mentor/tree/main/10.%20social-proof-section-master) &emsp;&emsp;&emsp;&emsp;[Live server](https://zbigniew-slawik-social-proof-section.netlify.app/)&emsp;&emsp;&emsp;&emsp;[Frontend Mentor Solution](https://www.frontendmentor.io/solutions/social-proof-section-by-zbigniew-sawik-5BnD7rE2el)
