@@ -1,0 +1,169 @@
+@font-face {
+   font-family: "Barlow Semi Condensed";
+   src: url("../assets/fonts/BarlowSemiCondensed-Medium.woff2") format("woff2"),
+      url("../assets/fonts/BarlowSemiCondensed-Medium.woff") format("woff");
+   font-weight: 500;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Barlow Semi Condensed";
+   src: url("../assets/fonts/BarlowSemiCondensed-SemiBold.woff2")
+         format("woff2"),
+      url("../assets/fonts/BarlowSemiCondensed-SemiBold.woff") format("woff");
+   font-weight: 600;
+   font-display: swap;
+}
+
+:root {
+   /* ### Primary */
+   --moderate-violet: #7541c8;
+   --very-dark-grayish-blue: #48556a;
+   --very-dark-blackish-blue: #19212e;
+   --white: #ffffff;
+
+   /* ### Neutral */
+   --light-gray: #cfcfcf;
+   --light-grayish-blue: #ecf2f8;
+   --mariner: #3e52a3;
+   --mariner-box-shadow: rgba(62, 82, 163, 0.2);
+}
+
+/**************************/
+/* MAIN*/
+/**************************/
+
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font: 500 15px "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+   background-color: var(--light-grayish-blue);
+}
+
+.testimonials {
+   margin: 4rem 1.5rem 0 1.5rem;
+}
+
+.testimonials__testimonial {
+   padding: 2rem;
+   border-radius: 0.625rem;
+   margin-bottom: 1.5rem;
+}
+
+.testimonials__testimonial--clifford {
+   background-color: var(--moderate-violet);
+   background-image: url(../assets/images/bg-pattern-quotation.svg);
+   background-repeat: no-repeat;
+   background-position: top right 1.5rem;
+}
+
+.testimonials__testimonial--walters {
+   background-color: var(--very-dark-grayish-blue);
+}
+
+.testimonials__testimonial--harmon {
+   background-color: var(--white);
+}
+
+.testimonials__testimonial--abrams {
+   background-color: var(--very-dark-blackish-blue);
+}
+
+.testimonials__testimonial--whittle {
+   background-color: var(--white);
+}
+
+.testimonial__header {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   padding-bottom: 0.8rem;
+}
+
+.header__image {
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+}
+
+.header__image--clifford {
+   border: 2px solid rgba(207, 207, 207, 0.5);
+}
+
+.header__image--abrams {
+   border: 2px solid var(--moderate-violet);
+}
+
+.header__name {
+   font-size: 0.938rem;
+}
+
+.header__name--color-background {
+   color: var(--light-gray);
+}
+
+.header__name--white-background {
+   color: var(--very-dark-grayish-blue);
+}
+
+.header__verified {
+   font-size: 0.8rem;
+}
+
+.header__verified--color-background {
+   color: rgba(207, 207, 207, 0.5);
+}
+
+.header__verified--white-background {
+   color: rgba(72, 85, 106, 0.5);
+}
+
+.testimonial__heading {
+   font-size: 1.38rem;
+   padding-bottom: 1rem;
+   font-weight: 600;
+}
+
+.testimonial__heading--color-background {
+   color: var(--light-gray);
+}
+
+.testimonial__heading--white-background {
+   color: var(--very-dark-grayish-blue);
+}
+
+.testimonial__quote {
+   font-size: 0.95rem;
+}
+
+.testimonial__quote--color-background {
+   color: rgba(207, 207, 207, 0.7);
+}
+
+.testimonial__quote--white-background {
+   color: rgba(72, 85, 106, 0.7);
+}
+
+/**************************/
+/* FOOTER*/
+/**************************/
+
+.attribution {
+   font-size: 0.688rem;
+   text-align: center;
+   position: relative;
+   top: 2rem;
+   margin-bottom: 5rem;
+}
+.attribution a {
+   color: var(--mariner);
+}

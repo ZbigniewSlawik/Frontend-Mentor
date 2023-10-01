@@ -1,0 +1,36 @@
+@media (min-width: 64em) {
+   body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .testimonials {
+      max-width: 77rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr 1fr;
+      column-gap: 1.5rem;
+      row-gap: 1.5rem;
+   }
+
+   .testimonials__testimonial {
+      margin-bottom: 0;
+      box-shadow: 55px 52px 20px -37px rgba(66, 68, 90, 0.2);
+   }
+
+   .testimonials__testimonial--clifford {
+      background-position: top right 6.5rem;
+      grid-area: 1 / 1 / 2 / 3;
+   }
+
+   .testimonials__testimonial--whittle {
+      grid-area: 1 / 4 / 3 / 5;
+   }
+
+   .testimonials__testimonial--abrams {
+      grid-area: 2 / 2 / 3 / 4;
+   }
+}
