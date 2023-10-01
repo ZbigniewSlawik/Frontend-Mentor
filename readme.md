@@ -45,3 +45,9 @@ A collection of my frontend challenges from the [Frontend Mentor](https://www.fr
 #### 10. Social proof section
 
 [Github](https://github.com/ZbigniewSlawik/Frontend-Mentor/tree/main/10.%20social-proof-section-master) &emsp;&emsp;&emsp;&emsp;[Live server](https://zbigniew-slawik-social-proof-section.netlify.app/)&emsp;&emsp;&emsp;&emsp;[Frontend Mentor Solution](https://www.frontendmentor.io/solutions/social-proof-section-by-zbigniew-sawik-5BnD7rE2el)
+
+### Junior level
+
+#### 11. Testimonials grid section
+
+[Github](https://github.com/ZbigniewSlawik/Frontend-Mentor/tree/main/10.%20social-proof-section-master) &emsp;&emsp;&emsp;&emsp;[Live server](https://zbigniew-slawik-testimonials-section.netlify.app/)&emsp;&emsp;&emsp;&emsp;[Frontend Mentor Solution](https://www.frontendmentor.io/solutions/testimonials-grid-section-by-zbigniew-sawik-8mm5Zys5-s)
